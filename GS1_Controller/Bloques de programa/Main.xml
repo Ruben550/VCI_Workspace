@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2024-08-11T17:53:04.8340159Z</Created>
+    <Created>2024-08-13T13:17:31.7260272Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -100,7 +100,7 @@
     <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>UDInt</ConstantType>
-        <ConstantValue>19200</ConstantValue>
+        <ConstantValue>9600</ConstantValue>
       </Constant>
     </Access>
     <Access Scope="LiteralConstant" UId="24">
@@ -246,75 +246,35 @@
         <Component Name="GS1_STATUS" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="25">
-      <Symbol>
-        <Component Name="VOLTS" />
-      </Symbol>
-    </Access>
-    <Access Scope="GlobalVariable" UId="26">
-      <Symbol>
-        <Component Name="AMPS" />
-      </Symbol>
-    </Access>
-    <Access Scope="GlobalVariable" UId="27">
-      <Symbol>
-        <Component Name="HERTZ" />
-      </Symbol>
-    </Access>
-    <Access Scope="GlobalVariable" UId="28">
-      <Symbol>
-        <Component Name="RPM" />
-      </Symbol>
-    </Access>
-    <Call UId="29">
+    <Call UId="25">
       <CallInfo Name="GS1_MODBUS" BlockType="FC">
         <Parameter Name="GS1_DONE" Section="Output" Type="Bool" />
         <Parameter Name="GS1_BUSY" Section="Output" Type="Bool" />
         <Parameter Name="GS1_ERROR" Section="Output" Type="Bool" />
         <Parameter Name="GS1_STATUS" Section="Output" Type="Word" />
-        <Parameter Name="VOLTS" Section="Output" Type="UInt" />
-        <Parameter Name="AMPS" Section="Output" Type="UInt" />
-        <Parameter Name="HERTZ" Section="Output" Type="UInt" />
-        <Parameter Name="RPM" Section="Output" Type="UInt" />
       </CallInfo>
     </Call>
   </Parts>
   <Wires>
-    <Wire UId="30">
+    <Wire UId="26">
       <Powerrail />
-      <NameCon UId="29" Name="en" />
+      <NameCon UId="25" Name="en" />
     </Wire>
-    <Wire UId="31">
-      <NameCon UId="29" Name="GS1_DONE" />
+    <Wire UId="27">
+      <NameCon UId="25" Name="GS1_DONE" />
       <IdentCon UId="21" />
     </Wire>
-    <Wire UId="32">
-      <NameCon UId="29" Name="GS1_BUSY" />
+    <Wire UId="28">
+      <NameCon UId="25" Name="GS1_BUSY" />
       <IdentCon UId="22" />
     </Wire>
-    <Wire UId="33">
-      <NameCon UId="29" Name="GS1_ERROR" />
+    <Wire UId="29">
+      <NameCon UId="25" Name="GS1_ERROR" />
       <IdentCon UId="23" />
     </Wire>
-    <Wire UId="34">
-      <NameCon UId="29" Name="GS1_STATUS" />
+    <Wire UId="30">
+      <NameCon UId="25" Name="GS1_STATUS" />
       <IdentCon UId="24" />
-    </Wire>
-    <Wire UId="35">
-      <NameCon UId="29" Name="VOLTS" />
-      <IdentCon UId="25" />
-    </Wire>
-    <Wire UId="36">
-      <NameCon UId="29" Name="AMPS" />
-      <IdentCon UId="26" />
-    </Wire>
-    <Wire UId="37">
-      <NameCon UId="29" Name="HERTZ" />
-      <IdentCon UId="27" />
-    </Wire>
-    <Wire UId="38">
-      <NameCon UId="29" Name="RPM" />
-      <IdentCon UId="28" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
